@@ -1,3 +1,107 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* body {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+} */
+
+.application {
+  @apply tw-bg-stone-800 tw-h-screen tw-w-screen
+  tw-flex tw-font-montserrat
+}
+
+.header {
+  @apply tw-bg-stone-800 tw-rounded-b-sm
+  tw-flex tw-justify-center tw-w-[160px]
+  tw-h-screen tw-shadow-lg tw-shadow-stone-900
+}
+
+.navigation {
+  @apply tw-flex tw-flex-col tw-gap-y-2 tw-h-screen
+  tw-justify-end tw-pb-[65px]
+}
+
+.navigation-link:first-child {
+  @apply tw-absolute -tw-top-5 tw-left-0 tw-z-10
+  tw-bg-transparent hover:tw-bg-transparent
+  tw-cursor-default tw-w-[132px]
+}
+
+.navigation-link {
+  @apply tw-rounded-lg tw-px-2 tw-py-4
+  tw-uppercase tw-font-extrabold tw-text-stone-600
+  hover:tw-text-stone-500 tw-cursor-pointer
+  tw-text-center
+}
+
+.navigation-link-icon {
+  @apply tw-flex tw-items-center tw-justify-center
+  tw-text-center
+}
+
+.bottom-navigation-icon {
+  @apply tw-flex tw-items-center tw-justify-center
+  tw-text-center tw-text-stone-600 hover:tw-text-stone-500
+}
+
+.content {
+  @apply tw-w-full tw-h-screen tw-bg-stone-800
+  tw-flex tw-flex-col
+}
+
+.content-container {
+  @apply tw-bg-gradient-to-t tw-from-stone-800
+  tw-to-stone-900 tw-rounded-bl-xl tw-h-full
+  tw-border-l tw-border-b tw-border-stone-900
+}
+
+.background-container {
+  @apply tw-absolute -tw-m-4
+}
+
+.background {
+  @apply tw-relative tw-bg-cover tw-bg-center
+  tw-opacity-50
+}
+
+.posts-title {
+  @apply tw-font-bold tw-text-center tw-text-white
+  tw-text-4xl tw-uppercase
+}
+
+.footer {
+  @apply tw-bg-stone-800 tw-p-6 tw-rounded-t-sm
+}
+
+.footer-container {
+  @apply tw-flex tw-flex-row tw-justify-end tw-gap-4
+}
+
+.footer-container > li {
+  @apply tw-text-white tw-text-sm
+}
+
+.card-container {
+  @apply tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-4 tw-mx-4
+}
+
+.card {
+  @apply tw-flex tw-flex-col
+}
+
+.card-image {
+  @apply tw-w-full tw-h-full tw-object-cover tw-rounded-t-lg
+}
+
+.card-title {
+  @apply tw-flex tw-bg-stone-700 tw-rounded-b-lg tw-p-2
+  tw-text-white tw-font-montserrat tw-justify-end tw-pr-4
+}
+
+.card-title::first-letter {
+  @apply tw-uppercase
+}

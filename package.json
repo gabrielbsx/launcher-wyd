@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "@tauri-apps/api": "^1.2.0",
-    "preact": "^10.11.3"
+    "preact": "^10.11.3",
+    "preact-router": "^4.1.0",
+    "react-icons": "^4.7.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@faker-js/faker": "^7.6.0",
     "@preact/preset-vite": "^2.4.0",
     "@tauri-apps/cli": "^1.2.2",
     "@types/node": "^18.7.14",

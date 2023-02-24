@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/core': ^7.12.10
+  '@faker-js/faker': ^7.6.0
   '@preact/preset-vite': ^2.4.0
   '@tauri-apps/api': ^1.2.0
   '@tauri-apps/cli': ^1.2.2
@@ -16,6 +17,8 @@ specifiers:
   eslint-plugin-react: ^7.32.2
   postcss: ^8.4.21
   preact: ^10.11.3
+  preact-router: ^4.1.0
+  react-icons: ^4.7.1
   tailwindcss: ^3.2.7
   typescript: ^4.9.5
   vite: ^4.0.0
@@ -23,9 +26,12 @@ specifiers:
 dependencies:
   '@tauri-apps/api': 1.2.0
   preact: 10.12.1
+  preact-router: 4.1.0_preact@10.12.1
+  react-icons: 4.7.1
 
 devDependencies:
   '@babel/core': 7.21.0
+  '@faker-js/faker': 7.6.0
   '@preact/preset-vite': 2.5.0_b2ipitzifys6ns6ctjag4f7do4
   '@tauri-apps/cli': 1.2.3
   '@types/node': 18.14.1
@@ -506,6 +512,11 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@faker-js/faker/7.6.0:
+    resolution: {integrity: sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==}
+    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
     dev: true
 
   /@humanwhocodes/config-array/0.11.8:
@@ -2445,6 +2456,14 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /preact-router/4.1.0_preact@10.12.1:
+    resolution: {integrity: sha512-y1w2YvVpKAju9FMV+fAVR1NpH4MW5q07BZrziMZeg6F/rGJ9KvLUZtjOqsy2I8fDYiX36AM1AQTXIIK3jigBhA==}
+    peerDependencies:
+      preact: '>=10'
+    dependencies:
+      preact: 10.12.1
+    dev: false
+
   /preact/10.12.1:
     resolution: {integrity: sha512-l8386ixSsBdbreOAkqtrwqHwdvR35ID8c3rKPa8lCWuO86dBi32QWHV4vfsZK1utLLFMvw+Z5Ad4XLkZzchscg==}
 
@@ -2474,6 +2493,12 @@ packages:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
     dev: true
+
+  /react-icons/4.7.1:
+    resolution: {integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==}
+    peerDependencies:
+      react: '*'
+    dev: false
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
